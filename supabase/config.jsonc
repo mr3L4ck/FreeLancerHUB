@@ -1,0 +1,13 @@
+{
+  "project_id": "nwwijqfhhrvyvcalpuby",
+  "name": "FreeLancer HUB",
+  "database": {
+    "url": "postgresql://postgres:[REDACTED]@aws-0-ap-south-1.pooler.supabase.com:5432/postgres",
+    "maxConnections": 4
+  },
+  "host": "rttvhqhjzmxixnccipuf.supabase.co",
+  "port": 443,
+  "secure": true,
+  "local": false,
+  "cliVersion": "1.20.0"
+}
