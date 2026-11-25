@@ -470,6 +470,7 @@ CREATE POLICY "client_tag_assignments_visible_to_workspace_members" ON client_ta
     FOR SELECT USING (
         EXISTS (
             SELECT 1 FROM workspace_members
+            JOIN clients ON clients.id = client_tag_assignments.client_id
             WHERE workspace_members.workspace_id = clients.workspace_id
             AND workspace_members.user_id = auth.uid()
         )
